@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Emanoel Sabino</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <nav id="menu">
+        <a id="emanoel" href="index.html">Emanoel Sabino<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+          </svg></a>
+        <a href="sobre.html">Sobre Mim</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="contato.html">Contato</a>
+</nav>
+    <header>
+        <picture>
+            <img src="img/minhaFotoP.png" alt="Minha foto">
+        </picture>
+        <div>
+            <h1>Emanoel Sabino</h1>
+            <h3>Esta é uma página de estudo de Desenvolvimento Web</h3>
+        </div>
+    </header>
+
+
+    <!-- No main criei um formulário com input para receber nome, email e a menssagem que o usúario quiser mandar-->
+    <main>
+        <section id="contato">
+            <article>
+                <h1 style="text-align: center;">Envie sua menssagem!</h1>
+                <hr>
+                <!--Utilizei o API staticforms para fazer o serviço de enviar o email, para o meu email cadastrado-->
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="hidden" name="accessKey" value="bcfeb5e5-dd55-4058-92b5-dce3dc930386">
+                    <!--Após envio do email será redirecionado para a Página principal-->
+                    <input type="hidden" name="redirectTo" value="http://emanoelsabino.000webhostapp.com/">
+
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Nome</span>
+                        <input type="text" class="form-control" placeholder="Digite seu nome" id="nome" name="name">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon2">E-mail</span>
+                        <input type="text" class="form-control" placeholder="email@exemplo.com" id="email" name="email">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-text">Menssagem</span>
+                        <textarea class="form-control" aria-label="With textarea" placeholder="Digite sua menssagem..." id="msg" name="message"></textarea>
+                    </div>
+
+                    <hr>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <input type="submit" id="enviar" value="Enviar" class="btn btn-outline-success">
+                    </div>
+                </form>
+            </article>
+            <hr>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Emanoel Sabino &copy;Copyright 2022</p> 
+    </footer>
+
+
+    <script type="text/javascript" src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>

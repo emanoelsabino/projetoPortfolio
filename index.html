@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icone personalizado-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--Título do sítio-->
+    <title>Emanoel Sabino</title>
+
+    <!--link para css externo no arquivo style.css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--link para o framework bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <!--Tag nav para organizar o menu de opções das páginas-->
+    <nav id="menu">
+            <a id="emanoel" href="index.html">Emanoel Sabino</a>
+            <a href="sobre.html">Sobre Mim</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="contato.html">Contato</a>
+    </nav>
+    <!--Tag header par cabeçalho da página-->
+    <header>
+        <picture>
+            <img src="img/minhaFotoP.png" alt="Minha foto">
+        </picture>
+        <div>
+            <h1>Emanoel Sabino</h1>
+            <h3>Esta é uma página de estudo de Desenvolvimento Web</h3>
+        </div>
+    </header>
+    
+    <!--Tag main para organizar o conteúdo principal da página-->
+    <main>
+        <!--Seções e artigos com conteúdos-->
+        <section id="sobremim">
+            <article>
+                <!--[data-anima] configurado no css e é acionado com o scroll da página como configurado o javascript-->
+                <h2 data-anima="centro">Olá, Mundo!</h2>
+                <p data-anima="esquerda">Seja bem vindo na minha página de estudos de Desenvolvimento Web! Eu sou o Emanoel Sabino, brasileiro, casado e tenho duas filhas.</p>
+                <p data-anima="esquerda">Minhas paixões...</p>
+                <div class="d-grid gap-2 col-6 mx-auto" data-anima="centro"><a class="btn btn-outline-success" href="sobre.html">Veja mais sobre mim</a></div>
+            </article>
+            <hr>
+        </section>
+        <section id="portifolio">
+            <article>
+                <h2 data-anima="centro">Portfólio</h2>
+                <h3 data-anima="esquerda">Formação Profissional</h3>
+                <p data-anima="esquerda">Sou Técnico em Telecomunicações, e estou estudando Análise e Desenvolvimento de Sistemas.</p>
+                <div class="d-grid gap-2 col-6 mx-auto" data-anima="centro"><a class="btn btn-outline-success" href="portfolio.html">Confira meu portifólio</a></div>
+            </article>
+            <hr>
+        </section>
+        <section id="contato">
+            <h2 data-anima="centro">Meus Contatos <img style="max-width: 50px;" src="img/midia-social.png" alt="teste"></h2>
+            <div class="d-grid gap-2 col-6 mx-auto" data-anima="centro"><a class="btn btn-outline-success" href="contato.html">Envie uma menssagem</a></div>
+            <hr>
+            <p data-anima="esquerda">
+                <a href="https://www.facebook.com/emanoel.manu.13" target="_blank"><img style="max-width: 50px;" src="img/facebook.png" alt="icone facebook"></a>
+                <a href="https://www.instagram.com/gomes_juliana_85/" target="_blank"><img style="max-width: 50px;" src="img/instagram.png" alt="icone instagram"></a>
+                <a href="https://www.linkedin.com/in/emanoel-sabino/" target="_blank"><img style="max-width: 50px;" src="img/linkedin.png" alt="icone linkedin"></a>
+            </p>
+            <hr>
+        </section>
+    </main>
+
+
+    <!--Tag footer para organizar o rodapé da página-->
+    <footer>
+        <p>Desenvolvido por Emanoel Sabino &copy;Copyright 2022</p> 
+    </footer>
+
+    <!--script externo, no arqivo script.js para configurações javascript da página-->
+    <script type="text/javascript" src="script.js"></script>
+    
+    <!--scripts para acionar bootstrap no site-->    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+
+    <!--As outras páginas, Sobre mim, Portfólio e Contato segum o padrão da página principal-->
+</body>
+</html>

@@ -1,0 +1,124 @@
+/*Regras para Utf-8 e keyframes para criar a animação*/
+@charset "UTF-8";
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*seletor '*' para difinir margem e padding 0 de forma global*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Configuração do menu superior*/
+#menu {
+    background-color: #113818;
+    padding: 7px;
+    box-shadow: 1px 1px 4px #33a14773;
+    border-radius: 15px 0px;
+    width: 100%;
+    position: fixed;
+    text-align: right;
+    z-index: 2;
+}
+
+nav a {
+    color: white;
+    padding-right: 8px;
+}
+nav #emanoel {
+    position: fixed;
+    left: 1%;
+
+}
+
+/* Configuraçõe do cabeçalho HEADER */
+header{
+    margin: auto;
+    background-color: #07180b;
+    color: #4fff6f;
+    min-height: 400px;
+    text-align: center;
+    padding: 10px;
+}
+header h1{
+    animation: fadeInText 1.2s 1.2s both;
+}
+header h3{
+    animation: fadeInText 1.5s 1.5s both;
+}
+header picture{
+    margin: auto;
+    animation: fadeInText 0.5s 0.5s both;
+}
+header img{
+    max-width: 150px;
+    padding-top: 80px;
+}
+
+/* Configuração do main, incluindo os titulos e paragrafor e alinhamentos*/
+main{
+    margin: auto;
+    padding: 10px;
+    margin-top: 15px;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px 10px #2a8a4062;
+}
+main h2 {
+    text-align: center;
+    animation: reverse;
+}
+main p {
+    margin-top: 15px;
+    text-indent: 25px;
+}
+main section {
+    margin-top: 50px;
+}
+main div{
+    margin: auto;
+    max-width: 600px;
+}
+img {
+    width: 100%;
+}
+
+nav#redeSocial {
+    max-width: 50px;
+}
+nav#redeSocial a {
+    max-width: 50px;
+}
+
+/* Configuração do rodapé */
+footer{
+    margin-top: 10px;
+    height: 100px;
+    padding: 15px;
+    background-color: #07180b;
+    color: #4fff6f;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+/* ANIMAÇÃO duas opções de fadein para entrada de texto e imagens na tela conforme o scroll da tela */
+[data-anima]{
+    opacity: 0;
+    transition: 1s;
+}
+[data-anima="esquerda"]{
+    transform: translate3d(-50px, 0px, 0px);
+}
+[data-anima="centro"]{
+    transform: translate3d(0px, 50px, 0px);
+}
+[data-anima].animacao{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
